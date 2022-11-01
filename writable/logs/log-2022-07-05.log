@@ -1,0 +1,14 @@
+ERROR - 2022-07-05 23:54:31 --> Error connecting to the database: Unknown database 'cv-ci4'
+CRITICAL - 2022-07-05 23:54:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'cv-ci4'
+#0 C:\xampp\htdocs\MyProject\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\MyProject\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\MyProject\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\MyProject\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\MyProject\app\Controllers\User.php(13): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\MyProject\system\CodeIgniter.php(832): App\Controllers\User->index()
+#6 C:\xampp\htdocs\MyProject\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\MyProject\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\MyProject\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\MyProject\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
